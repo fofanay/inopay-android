@@ -4,7 +4,7 @@ Kotlin SDK — client for the Inopay African capital markets infrastructure (BRV
 
 ## Status
 
-`v0.1.0-alpha.1` — alpha public, wraps `https://api.getinopay.com/v1/sandbox/*`. Maven Central publication coming next.
+`v0.1.0-alpha.2` — alpha public, wraps `https://api.getinopay.com/v1/sandbox/*`. Maven Central publication coming next.
 
 ## Install
 
@@ -14,7 +14,7 @@ Once published to Maven Central:
 
 ```kotlin
 dependencies {
-    implementation("com.inopay:inopay-android:0.1.0-alpha.1")
+    implementation("com.inopay:inopay-android:0.1.0-alpha.2")
 }
 ```
 

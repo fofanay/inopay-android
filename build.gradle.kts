@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.inopay"
-version = "0.1.0-alpha.1"
+version = "0.1.0-alpha.2"
 
 repositories {
     mavenCentral()
@@ -36,7 +36,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.inopay"
             artifactId = "inopay-android"
-            version = "0.1.0-alpha.1"
+            version = "0.1.0-alpha.2"
             from(components["java"])
         }
     }
