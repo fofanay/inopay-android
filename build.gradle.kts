@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "1.9.22"
     kotlin("plugin.serialization") version "1.9.22"
+    `java-library`
     `maven-publish`
 }
 
@@ -12,9 +13,11 @@ repositories {
 }
 
 dependencies {
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    // api: ces lib apparaissent dans la signature publique de l'API.
+    api("com.squareup.okhttp3:okhttp:4.12.0")
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    // serialization: utilisée en interne via @Serializable, pas exposée.
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
 
     testImplementation(kotlin("test"))
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
