@@ -1,26 +1,47 @@
 # inopay-android
 
+[![JitPack](https://img.shields.io/jitpack/v/github/fofanay/inopay-android.svg)](https://jitpack.io/#fofanay/inopay-android)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Kotlin SDK — client for the Inopay African capital markets infrastructure (BRVM, BVMAC, GSE) via the public sandbox.
 
 ## Status
 
-`v0.1.0-alpha.2` — alpha public, wraps `https://api.getinopay.com/v1/sandbox/*`. Maven Central publication coming next.
+`v0.1.0-alpha.2` — public alpha. Wraps `https://api.getinopay.com/v1/sandbox/*`. Maven Central publication coming next.
 
 ## Install
 
 ### Gradle (KTS)
 
-Once published to Maven Central:
+In your top-level `settings.gradle.kts` or `build.gradle.kts`, add JitPack as a repository:
 
 ```kotlin
-dependencies {
-    implementation("com.inopay:inopay-android:0.1.0-alpha.2")
+repositories {
+    mavenCentral()
+    maven("https://jitpack.io")
 }
 ```
 
-### Manual (during alpha)
+Then in your module's `build.gradle.kts`:
 
-Download the zip from <https://getinopay.com/sdk/android/> and drop the `src/main/kotlin/com/inopay/` directory into your project, or attach it as a local module.
+```kotlin
+dependencies {
+    implementation("com.github.fofanay:inopay-android:v0.1.0-alpha.2")
+}
+```
+
+### Gradle (Groovy)
+
+```gradle
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.fofanay:inopay-android:v0.1.0-alpha.2'
+}
+```
 
 ## Quick start
 
@@ -73,7 +94,7 @@ For private quotas request a sandbox key at <https://getinopay.com/fr/developers
 ## Requirements
 
 - Kotlin 1.9+
-- JVM toolchain 17+
+- JVM 17+
 - OkHttp 4.12+, kotlinx-serialization-json 1.6+, kotlinx-coroutines-core 1.7+
 
 ## License
