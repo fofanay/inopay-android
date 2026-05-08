@@ -62,7 +62,7 @@ dependencies {
     api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     // Serialization (déjà dans le module racine, on ré-utilise)
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0")
 
     // Tooling — debug only
     debugImplementation("androidx.compose.ui:ui-tooling")
