@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inopay UI module. Pas de permission Android requise — uniquement INTERNET pour
+     les appels API, déclarée par l'app hôte. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" />
