@@ -27,12 +27,12 @@ data class KycViewModel(
             firstName = firstName,
             partnerKycContext = "vous a déjà identifié pour l'usage de votre compte",
             importedItems = listOf(
-                KycImportedItem("1", "Identité légale", "Nom, prénom, date de naissance", partnerName, "12/03/2024"),
-                KycImportedItem("2", "Pièce d'identité officielle", "Scan recto/verso vérifié", partnerName, "12/03/2024"),
-                KycImportedItem("3", "Selfie de vivacité", "Reconnaissance faciale validée", partnerName, "12/03/2024"),
-                KycImportedItem("4", "Justificatif de domicile", "Document officiel < 3 mois", partnerName, "12/03/2024"),
-                KycImportedItem("5", "Adresse postale", "Vérifiée par le partenaire", partnerName, "12/03/2024"),
-                KycImportedItem("6", "Téléphone vérifié", "Numéro confirmé par OTP", partnerName, "12/03/2024"),
+                KycImportedItem("1", "Identité déclarée", "Nom, prénom, date de naissance", partnerName, ""),
+                KycImportedItem("2", "Pièce d'identité", "Déposée · non vérifiée", partnerName, ""),
+                KycImportedItem("3", "Photo du visage", "Déposée · vivacité non vérifiée", partnerName, ""),
+                KycImportedItem("4", "Justificatif de domicile", "Déposé", partnerName, ""),
+                KycImportedItem("5", "Adresse postale", "Renseignée", partnerName, ""),
+                KycImportedItem("6", "Téléphone", "Renseigné · non confirmé", partnerName, ""),
             ),
             totalItems = 8,
         )
